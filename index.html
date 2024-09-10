@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Добро пожаловать</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+                <div class="header__top">
+                    <div class="name-block">
+                        <div class="name-wrapper">
+                            <h1 class="name">SONLINE</h1>
+                            <a class="mail" href="mailto:info@sonline.su"
+                                >info@sonline.su</a
+                            >
+                        </div>
+                        <div class="auth auth_ok none js-auth-status-ok">
+                            <div class="auth__icon js-icon-ok"></div>
+                            <span class="auth__text">Действующий партнёр</span>
+                        </div>
+                        <div class="auth auth_not-ok js-auth-status-not-ok">
+                            <span class="auth__icon js-icon-record"></span>
+                            <span class="auth__text"
+                                >Телефон не авторизован</span
+                            >
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button sign-out-button tooltip-trigger js-tooltip-trigger"
+                        type="button"
+                    >
+                        <div class="js-icon-sign"></div>
+                        <span class="tooltip js-tooltip">Выйти</span>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <nav class="nav">
+                    <a class="nav_logo-link" href="index.html"
+                        ><img class="nav__logo-icon" src="./logo.svg"
+                    /></a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a
+                                class="nav__page-link nav__page-link_active"
+                                href="index.html"
+                            >
+                                <span
+                                    class="nav__page-icon js-icon-home"
+                                ></span>
+                                <span>Главная</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="storefront.html">
+                                <span
+                                    class="nav__page-icon js-icon-storefront"
+                                ></span>
+                                <span>Филиалы</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="finance.html">
+                                <span
+                                    class="nav__page-icon js-icon-coins"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Финансы</span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav__list-item nav__list-item_mobile">
+                            <a class="nav__page-link" href="support.html">
+                                <span
+                                    class="nav__page-icon js-icon-question"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Техподдержка</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <section class="section">
+                    <div class="section-block">
+                        <div class="partner-card">
+                            <p class="partner-card__title">Филиалы</p>
+                            <div class="partner-card__active-block">
+                                <span class="partner-card__active-title"
+                                    >Активных филиалов</span
+                                >
+                                <span class="partner-card__active-number"
+                                    >201</span
+                                >
+                            </div>
+                            <div class="partner-card__sub-block">
+                                <div class="partner-card__sub-item">
+                                    <span class="partner-card__sub-item-title"
+                                        >За год</span
+                                    >
+                                    <span class="partner-card__sub-item-number"
+                                        >+43</span
+                                    >
+                                </div>
+                                <div class="partner-card__sub-item">
+                                    <span class="partner-card__sub-item-title"
+                                        >За месяц</span
+                                    >
+                                    <span class="partner-card__sub-item-number"
+                                        >+8</span
+                                    >
+                                </div>
+                            </div>
+                            <a class="partner-card__link" href="storefront.html"
+                                >Подробнее</a
+                            >
+                        </div>
+                        <div class="partner-card">
+                            <p class="partner-card__title">Финансы</p>
+                            <div class="partner-card__active-block">
+                                <span class="partner-card__active-title"
+                                    >К выплате</span
+                                >
+                                <span class="partner-card__active-number"
+                                    >48 600 ₽</span
+                                >
+                            </div>
+                            <div class="partner-card__sub-block">
+                                <div class="partner-card__sub-item">
+                                    <span class="partner-card__sub-item-title"
+                                        >Поступления</span
+                                    >
+                                    <span class="partner-card__sub-item-number"
+                                        >243 000 ₽</span
+                                    >
+                                </div>
+                                <div class="partner-card__sub-item">
+                                    <span class="partner-card__sub-item-title"
+                                        >Партнёрские</span
+                                    >
+                                    <span class="partner-card__sub-item-number"
+                                        >20%</span
+                                    >
+                                </div>
+                            </div>
+                            <a class="partner-card__link" href="finance.html"
+                                >Подробнее</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

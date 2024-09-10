@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Добро пожаловать</title>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="layout">
+            <header class="header">
+                <div class="header__top">
+                    <div class="name-block">
+                        <div class="name-wrapper">
+                            <h1 class="name">SONLINE</h1>
+                            <a class="mail" href="mailto:info@sonline.su"
+                                >info@sonline.su</a
+                            >
+                        </div>
+                        <div class="auth auth_ok none js-auth-status-ok">
+                            <div class="auth__icon js-icon-ok"></div>
+                            <span class="auth__text">Действующий партнёр</span>
+                        </div>
+                        <div class="auth auth_not-ok js-auth-status-not-ok">
+                            <span class="auth__icon js-icon-record"></span>
+                            <span class="auth__text"
+                                >Телефон не авторизован</span
+                            >
+                        </div>
+                    </div>
+                    <button
+                        class="icon-button sign-out-button tooltip-trigger js-tooltip-trigger"
+                        type="button"
+                    >
+                        <div class="js-icon-sign"></div>
+                        <span class="tooltip js-tooltip">Выйти</span>
+                    </button>
+                </div>
+            </header>
+            <main class="main">
+                <nav class="nav">
+                    <a class="nav_logo-link" href="index.html"
+                        ><img class="nav__logo-icon" src="./logo.svg"
+                    /></a>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="index.html">
+                                <span
+                                    class="nav__page-icon js-icon-home"
+                                ></span>
+                                <span>Главная</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a
+                                class="nav__page-link nav__page-link_active"
+                                href="storefront.html"
+                            >
+                                <span
+                                    class="nav__page-icon js-icon-storefront"
+                                ></span>
+                                <span>Филиалы</span></a
+                            >
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__page-link" href="finance.html">
+                                <span
+                                    class="nav__page-icon js-icon-coins"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Финансы</span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav__list-item nav__list-item_mobile">
+                            <a class="nav__page-link" href="support.html">
+                                <span
+                                    class="nav__page-icon js-icon-question"
+                                ></span>
+                                <span class="nav__page-link-text_payments"
+                                    >Техподдержка</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <section class="section">
+                    <h2 class="section-main-title">Филиалы</h2>
+                </section>
+                <section class="section">
+                    <div class="partner-info">
+                        <div class="partner-info__block">
+                            <span class="partner-info__block-title"
+                                >Активных филиалов</span
+                            >
+                            <span
+                                class="partner-info__block-text partner-info__block-text_big"
+                                >201</span
+                            >
+                        </div>
+                        <div class="partner-info__section">
+                            <div
+                                class="partner-info__block partner-info__block_s"
+                            >
+                                <span class="partner-info__block-title"
+                                    >За год</span
+                                >
+                                <span class="partner-info__block-text"
+                                    >+<span>43</span></span
+                                >
+                            </div>
+                            <div
+                                class="partner-info__block partner-info__block_s"
+                            >
+                                <span class="partner-info__block-title"
+                                    >За месяц</span
+                                >
+                                <span class="partner-info__block-text"
+                                    >+<span>8</span></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Список филиалов</h2>
+                    <div class="partners-table">
+                        <div class="partners-table__header">
+                            <div class="partners-table__header-cell">ID</div>
+                            <div class="partners-table__header-cell">
+                                Название
+                            </div>
+                            <div class="partners-table__header-cell">
+                                Лицензия до
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Сесть салонов красоты Ромашкино счастье в
+                                    Москве и Подмосковье
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                15.12.2023
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Барбершоп Кость
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                10.11.2023
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Клиника АстроМед
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                06.01.2024
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Сесть салонов красоты
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                15.12.2023
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Барбершоп Кость
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                10.11.2023
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Клиника АстроМед
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                06.01.2024
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Сесть салонов красоты
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                15.12.2023
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Барбершоп Кость
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                10.11.2023
+                            </div>
+                        </div>
+                        <div class="partners-table__row">
+                            <div class="partners-table__row-block">
+                                <div
+                                    class="partners-table__row-cell partners-table__row-cell-id"
+                                >
+                                    <span
+                                        class="partners-table__row-cell-text-mobile"
+                                        >ID</span
+                                    >
+                                    000000000000
+                                </div>
+                                <div class="partners-table__row-cell">
+                                    Клиника АстроМед
+                                </div>
+                            </div>
+                            <div class="partners-table__row-cell">
+                                <span
+                                    class="partners-table__row-cell-text-mobile"
+                                    >Лицензия до</span
+                                >
+                                06.01.2024
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
