@@ -1051,7 +1051,14 @@ body {
 }
 
 .form-input_textarea {
-    padding: 16px 48px 16px 16px;
+    height: 144px;
+    padding: 12px;
+}
+
+@media (max-width: 767px) {
+    .form-input_textarea {
+        height: 168px;
+    }
 }
 
 .form-input::placeholder {
